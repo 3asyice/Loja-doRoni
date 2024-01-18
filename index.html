@@ -73,6 +73,42 @@
       height:auto;
       
     }
+    .anel {
+      padding:20px;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(60, 60, 60, 1);
+      color: #FF5400;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      position: fixed;
+      display: none;
+      hsla(20, 0%, 100%, 1);
+      overflow:auto;
+      height:auto;
+      
+    }
+    
+    .complain {
+      padding: 20px;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(60, 60, 60, 1);
+      color: #FF5400;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      position: fixed;
+      display: none;
+      hsla(20, 0%, 100%, 1);
+      overflow:auto;
+      height:auto;
+      
+    }
+
 
     img {
      height:70%;
@@ -114,7 +150,10 @@
     <button onclick="colareS()">Colares</button>
     <button onclick="pulseiras()">Pulseiras</button>
     <button onclick="clothes()">Roupas</button>
-    <button>Anéis</button>
+    <button onclick="ring()">Anéis</button>
+    <br><br><br><br>
+    <button onclick="recl()">Reclamações</button>
+    <br><br><br><br>
   </div>
   <div class="colares" id="colares">
     <button style="float:right;" onclick="colareS()">Voltar</button>
@@ -124,22 +163,7 @@
   <div class="pulseiras" id="pulseiras">
      <button style="float:right;" onclick="pulseiras()">Voltar</button>
       <h1 style="padding-top:40px;">PULSEIRAS</h1>
-     <form action="mailto:guilhermeabreu294@gmail.com?subject=Reclamação" method="post" enctype="text/plain">
-    <label for="nome">Seu Nome:</label>
-    <br> <input type="text" id="nome" name="nome" required><br><br>
     
-    <label for="email">Seu E-mail:</label>
-    <br> <input type="email" id="email" name="email" required><br><br>
-    
-    <label for="assunto">Assunto:</label>
-    <br> <input type="text" id="assunto" name="assunto" required><br><br>
-    
-    <label for="mensagem">Sua Reclamação:</label>
-    <br> <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-    
-    <br> <input type="submit" value="Enviar Reclamação">
-</form>
-
   </div>
   <div class="cloths" id="cloths">
     <button style="float:right;" onclick="clothes()">Voltar</button>
@@ -166,6 +190,29 @@
     <br><br><p>Blusa de <span style="color: red"><s>R$69,00</s></span> por apenas <span style="color:#0fff00;">R$34,50</span></p>
     <img src="https://raw.githubusercontent.com/3asyice/Loja-doRonei/main/IMG_20240116_151907_821.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20A9">Comprar 🛒</a>
   </div>
+    <div class="anel" id="anel">
+       <button style="float: right;" onclick="ring()">Anéis</button>
+      <h1>ANÉIS</h1>
+    </div>
+    <div class="complain" id="complain">
+       <button style="float: right;" onclick="recl()">Reclamações</button>
+<h1>RECLAMAÇÕES</h1>
+<form action="mailto:guilhermeabreu294@gmail.com?subject=Reclamação" method="post" enctype="text/plain">
+  <label for="nome">Seu Nome:</label>
+  <br> <input type="text" id="nome" name="nome" required><br><br>
+
+  <label for="email">Seu E-mail:</label>
+  <br> <input type="email" id="email" name="email" required><br><br>
+
+  <label for="assunto">Assunto:</label>
+  <br> <input type="text" id="assunto" name="assunto" required><br><br>
+
+  <label for="mensagem">Sua Reclamação:</label>
+  <br> <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+  <br> <input type="submit" value="Enviar Reclamação">
+</form>
+    </div>
   <script>
     var div = document.getElementById('colares');
     var display = 0;
@@ -203,6 +250,32 @@
       }
       else {
         clo.style.display = 'none'
+        display = 1;
+      }
+    }
+     var rin = document.getElementById('anel');
+     var display = 0;
+    
+     function ring() {
+       if (display == 1) {
+         rin.style.display = 'block'
+         display = 0;
+       }
+       else {
+         rin.style.display = 'none'
+         display = 1;
+       }
+     }
+    var rcl = document.getElementById('complain');
+    var display = 0;
+    
+    function recl() {
+      if (display == 1) {
+        rcl.style.display = 'block'
+        display = 0;
+      }
+      else {
+        rcl.style.display = 'none'
         display = 1;
       }
     }
