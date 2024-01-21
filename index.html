@@ -27,7 +27,11 @@
     p {
       color: hsla(20, 0%, 100%, 1);
       text-align: justify;
+      font-family: 'Times New Roman', Times, serif;
      
+    }
+    button {
+      font-family: 'Times New Roman', Times, serif;
     }
 
     .colares {
@@ -141,6 +145,22 @@ margin:0 auto;
       border-radius: 15px;
       
     }
+    .gesso {
+      padding: 20px;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(60, 60, 60, 1);
+      color: #FF5400;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      position: fixed;
+      display: none;
+      hsla(20, 0%, 100%, 1);
+      overflow:auto;
+      height:auto;
+    }
   </style>
 </head>
 
@@ -160,9 +180,11 @@ margin:0 auto;
     <button onclick="pulseiras()">Pulseiras</button>
     <button onclick="clothes()">Roupas</button>
     <button onclick="ring()">Brincos</button>
-    <br><br><br><br>
+    <br><br> <button onclick="gesso()">Soluções em Gesso R&R</button><br><br>
+     
     <button onclick="recl()">Reclamações</button>
     <br><br><br><br>
+  
   </div>
   <div class="colares" id="colares">
     <button style="float:right;" onclick="colareS()">Voltar</button>
@@ -239,18 +261,19 @@ margin:0 auto;
     </p>
   </div>
     <div class="anel" id="anel">
-       <button style="float: right;" onclick="ring()">Anéis</button>
+       <button style="float: right;" onclick="ring()">Voltar</button>
       <h1>BRINCOS</h1>
       <br>
       <p>#1 Brincos pelo preço de <span style="color:#0fff00;">R$25,00</span> cada <br>
       <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG_20240118_153402_816.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20%anél">Comprar 🛒</a><br><br>
-      <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG_20240118_153726_512.jpg"><br><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20anél%20como%20faço?">Comprar 🛒</a><br>
+      <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG_20240118_153726_512.jpg"><br><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20anél%20como%20faço?">Comprar 🛒</a><br><br>
       <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG_20240118_153733_155.jpg"><br><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20anél%20de$20R$25">Comprar 🛒</a><br><br>
       
       #2 Brincos com o valor de <span style="color:#0fff00;">R$15,00</span><br>
-      <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG_20240118_175625_355.jpg"><br><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20brinco%20de%20R$15">Comprar 🛒</a><br>
+      <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG_20240118_175625_355.jpg"><br><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20brinco%20de%20R$15">Comprar 🛒</a><br><br>
       </p>
     </div>
+    
     <div class="complain" id="complain">
        <button style="float: right;" onclick="recl()">Voltar</button>
 <h1>RECLAMAÇÕES</h1>
@@ -270,6 +293,12 @@ margin:0 auto;
   <br> <input type="submit" value="Enviar Reclamação">
 </form>
     </div>
+     <div class="gesso" id="gesso">
+       <button style="float:right;" onclick="gesso()">Voltar</button>
+       <h1>SOLUÇÕES EM GESSO R&R</h1>
+    
+     </div>
+   
   <script>
     var div = document.getElementById('colares');
     var display = 0;
@@ -323,6 +352,24 @@ margin:0 auto;
          display = 1;
        }
      }
+     
+     var ges = document.getElementById('gesso');
+    var display = 0;
+    
+    function gesso() {
+      if (display == 1) {
+        ges.style.display = 'block'
+        display = 0;
+      }
+      else {
+        ges.style.display = 'none'
+        display = 1;
+      }
+    }
+   
+
+     
+     
     var rcl = document.getElementById('complain');
     var display = 0;
     
@@ -337,7 +384,6 @@ margin:0 auto;
       }
     }
    
-
   </script>
 </body>
 
