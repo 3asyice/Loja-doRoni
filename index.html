@@ -5,14 +5,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFpE7xU8tUJWWjlmclnS7cax8nF6cccpN-7A&usqp=CAU" title="icon" type="image/x-icon" />
+  <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFpE7xU8tUJWWjlmclnS7cax8nF6cccpN-7A&usqp=CAU" title="icon" type="image/x-icon" />
   <title>LOJA DO RONEI</title>
   <style>
     body {
       height: auto;
       overflow: auto;
       background-color: rgba(60, 60, 60, 1);
-      
+margin: 0;
+overflow: auto;
+    }
+   
+    
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 24px;
+      z-index: 9999;
     }
 
     h1,
@@ -28,8 +44,9 @@
       color: hsla(20, 0%, 100%, 1);
       text-align: justify;
       font-family: 'Times New Roman', Times, serif;
-     
+
     }
+
     button {
       font-family: 'Times New Roman', Times, serif;
     }
@@ -46,8 +63,8 @@
       font-family: 'Times New Roman', Times, serif;
       position: fixed;
       display: none;
-      height:auto;
-      overflow:auto;
+      height: auto;
+      overflow: auto;
     }
 
     .pulseiras {
@@ -62,12 +79,12 @@
       font-family: 'Times New Roman', Times, serif;
       position: fixed;
       display: none;
-      hsla(20, 0%, 100%, 1)
-      height:auto;
-      overflow:auto;
+      hsla(20, 0%, 100%, 1) height: auto;
+      overflow: auto;
     }
+
     .cloths {
-   padding:20px;
+      padding: 20px;
       top: 0;
       right: 0;
       bottom: 0;
@@ -79,12 +96,13 @@
       position: fixed;
       display: none;
       hsla(20, 0%, 100%, 1);
-      overflow:auto;
-      height:auto;
-      
+      overflow: auto;
+      height: auto;
+
     }
+
     .anel {
-      padding:20px;
+      padding: 20px;
       top: 0;
       right: 0;
       bottom: 0;
@@ -96,11 +114,11 @@
       position: fixed;
       display: none;
       hsla(20, 0%, 100%, 1);
-      overflow:auto;
-      height:auto;
-      
+      overflow: auto;
+      height: auto;
+
     }
-    
+
     .complain {
       padding: 20px;
       top: 0;
@@ -114,37 +132,40 @@
       position: fixed;
       display: none;
       hsla(20, 0%, 100%, 1);
-      overflow:auto;
-      height:auto;
-      
+      overflow: auto;
+      height: auto;
+
     }
 
 
     img {
-     height:50%;
-     width:100%;
-margin:0 auto;
-     
-     
+      height: 50%;
+      width: 100%;
+      margin: 0 auto;
+
+
     }
+
     button {
-      background-color: 
-      #FF6100;
-      color:rgba(255, 255, 255, 1);
+      background-color:
+        #FF6100;
+      color: rgba(255, 255, 255, 1);
       box-shadow: 3px 5px 5px rgba(141, 46, 0, 1);
-      padding:10px;
-      border:0;
+      padding: 10px;
+      border: 0;
       border-radius: 15px;
     }
+
     button:hover {
-      background-color: 
-      rgba(0, 255, 5, 1);
-      color:rgba(100, 0, 255, 1);
+      background-color:
+        rgba(0, 255, 5, 1);
+      color: rgba(100, 0, 255, 1);
       box-shadow: 3px 5px 5px rgba(0, 255, 156, 1);
-      padding:10px;
+      padding: 10px;
       border-radius: 15px;
-      
+
     }
+
     .gesso {
       padding: 20px;
       top: 0;
@@ -158,33 +179,38 @@ margin:0 auto;
       position: fixed;
       display: none;
       hsla(20, 0%, 100%, 1);
-      overflow:auto;
-      height:auto;
+      overflow: auto;
+      height: auto;
     }
   </style>
 </head>
 
 <body>
-  
+
   <img src="https://raw.githubusercontent.com/3asyice/Loja-doRonei/main/20240117_104507.jpg" alt="Imagem da loja de roupas do Ronei">
+  <div id="overlay">
+    
+  </div>
   <h1 style="padding-top:20px;">SOLUÇÕES EM GESSO R&R <br><br>LOJA DO RONI</h1>
   <br>
+  
   <p style="padding:20px;">
-    
+
     Loja de roupas, pulseiras, colares e anéis e muitas outras coisas. <br><br>
     Localizado em Santa Maria RS, bairro São José, Rua Av. Pref. Evandro Behr.
     <br><br>
-    WhatsApp para contato:<a style="color:white;" href="https://wa.me/555592129068">+555592129068</a></p>
+    WhatsApp para contato:<a style="color:white;" href="https://wa.me/555592129068">+555592129068</a>
+  </p>
   <div style="float:right;padding-right: 60px;">
     <button onclick="colareS()">Colares</button>
     <button onclick="pulseiras()">Pulseiras</button>
     <button onclick="clothes()">Roupas</button>
     <button onclick="ring()">Brincos</button>
     <br><br> <button onclick="gesso()">Soluções em Gesso R&R</button><br><br>
-     
+
     <button onclick="recl()">Reclamações</button>
     <br><br><br><br>
-  
+
   </div>
   <div class="colares" id="colares">
     <button style="float:right;" onclick="colareS()">Voltar</button>
@@ -192,111 +218,112 @@ margin:0 auto;
     <h1 style="padding-top:40px;">COLARES</h1>
     <br>
     <p>#1 Colar pelo preço de <span style="color:#0fff00;">R$120,00</span> <br>
-    <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG-20240117-WA0002.jpeg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#1">Comprar 🛒</a>
-    <br><br>
-    #2 Colar pelo preço de <span style="color:#0fff00;">R$20,00</span><br>
-    <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG_20240116_145152_783.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#2">Comprar 🛒</a><br><br>
-   #3 Colar pelo preço de <span style="color:#0fff00;">R$79,00</span><br>
-    <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/1705494390343.jpg" ><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#3">Comprar 🛒</a><br><br>
-    #4 Colar por apenas <span style="color:#0fff00;">R$20,00</span><br>
-    <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/1705499380638.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#4">Comprar 🛒</a>
-    <br><br>
-    #5 Colar de apenas <span style="color:#0fff00;">R$20,00</span><br>
-    <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG_20240116_145422_671.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#5">Comprar 🛒</a>
-    <br><br>
-    #6 Colar pelo preço de <span style="color:#0fff00;">R$229,00</span><br>
-    <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG_20240116_145459_166.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#6">Comprar 🛒</a>
-    <br><br>
-    #7 Colar pelo preço de <span style="color:#0fff00;">R$198,00</span><br>
-    <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG_20240116_145536_536.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#7">Comprar 🛒</a><br><br>
-    #8 Colar pelo preço de <span style="color:#0fff00;">R$198,00</span><br>
-    <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG_20240116_145620_073.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#8">Comprar 🛒</a><br><br>
-    #9 Colar pelo preço de <span style="color:#0fff00;">R$198,00</span><br>
-    <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG_20240116_145642_835.jpg" /><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#9">Comprar 🛒</a>
-    <br><br>
-    #10 Colar pelo preço de <span style="color:#0fff00;">R$79,90</span><br>
-    <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG_20240116_145729_827.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#10">Comprar 🛒</a>
-    <br><br>
-    #11 Colar pelo preço de <span style="color:#0fff00;">R$198,00</span><br>
-    <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG_20240118_172920_364.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar$20#11">Comprar 🛒</a><br>
+      <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG-20240117-WA0002.jpeg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#1">Comprar 🛒</a>
+      <br><br>
+      #2 Colar pelo preço de <span style="color:#0fff00;">R$20,00</span><br>
+      <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG_20240116_145152_783.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#2">Comprar 🛒</a><br><br>
+      #3 Colar pelo preço de <span style="color:#0fff00;">R$79,00</span><br>
+      <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/1705494390343.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#3">Comprar 🛒</a><br><br>
+      #4 Colar por apenas <span style="color:#0fff00;">R$20,00</span><br>
+      <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/1705499380638.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#4">Comprar 🛒</a>
+      <br><br>
+      #5 Colar de apenas <span style="color:#0fff00;">R$20,00</span><br>
+      <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG_20240116_145422_671.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#5">Comprar 🛒</a>
+      <br><br>
+      #6 Colar pelo preço de <span style="color:#0fff00;">R$229,00</span><br>
+      <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG_20240116_145459_166.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#6">Comprar 🛒</a>
+      <br><br>
+      #7 Colar pelo preço de <span style="color:#0fff00;">R$198,00</span><br>
+      <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG_20240116_145536_536.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#7">Comprar 🛒</a><br><br>
+      #8 Colar pelo preço de <span style="color:#0fff00;">R$198,00</span><br>
+      <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG_20240116_145620_073.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#8">Comprar 🛒</a><br><br>
+      #9 Colar pelo preço de <span style="color:#0fff00;">R$198,00</span><br>
+      <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG_20240116_145642_835.jpg" /><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#9">Comprar 🛒</a>
+      <br><br>
+      #10 Colar pelo preço de <span style="color:#0fff00;">R$79,90</span><br>
+      <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG_20240116_145729_827.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#10">Comprar 🛒</a>
+      <br><br>
+      #11 Colar pelo preço de <span style="color:#0fff00;">R$198,00</span><br>
+      <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG_20240118_172920_364.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar$20#11">Comprar 🛒</a><br>
     </p>
   </div>
   <div class="pulseiras" id="pulseiras">
-     <button style="float:right;" onclick="pulseiras()">Voltar</button>
-      <h1 style="padding-top:40px;">PULSEIRAS</h1>
-      <br>
-      <p>#1 Pulseira por apenas <span style="color:#0fff00;">R$79,00</span><br>
+    <button style="float:right;" onclick="pulseiras()">Voltar</button>
+    <h1 style="padding-top:40px;">PULSEIRAS</h1>
+    <br>
+    <p>#1 Pulseira por apenas <span style="color:#0fff00;">R$79,00</span><br>
       <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG_20240116_144058_034.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20a%20pulseira$20#1">Comprar 🛒</a>
-    <br><br>
-    #2 Pulseira de bronze por <span style="color:#0fff00;">R$79,00</span><br>
-    <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG_20240118_174008_492.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20a%20pulseira$20#2">Comprar 🛒</a>
+      <br><br>
+      #2 Pulseira de bronze por <span style="color:#0fff00;">R$79,00</span><br>
+      <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG_20240118_174008_492.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20a%20pulseira$20#2">Comprar 🛒</a>
     </p>
   </div>
   <div class="cloths" id="cloths">
     <button style="float:right;" onclick="clothes()">Voltar</button>
     <h1>ROUPAS</h1>
     <h3>Promoção:</h3>
-    <br><p>#1 Blusa de <span style="color:red"><s>R$30,00</s></span> por apenas <span style="color:#0fff00;">R$15,00</span><br>
-    <img src="https://raw.githubusercontent.com/3asyice/Loja-doRonei/main/IMG_20240117_140335_764.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#1">Comprar 🛒</a><br>
-    <br>  #2 Blusa de <span style="color:red;"><s>R$79,00</s></span> pelo preço de apenas <span style="color:#0fff00;">R$39,00</span><br>
-    <img src="https://raw.githubusercontent.com/3asyice/Loja-doRonei/main/20240117_105835.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#2">Comprar 🛒</a><br>
-    <br>#3 Blusa de <span style="color:red;"><s>R$79,00</s></span> por apenas <span style="color:#0fff00;">R$39,00</span><br>
-    <img src="https://raw.githubusercontent.com/3asyice/Loja-doRonei/main/20240117_105949.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#3">Comprar 🛒</a><br>
-    <br>#4 Camisa de <span style="color:red;"><s>R$49,00</s></span> por apenas <span style="color:#0fff00;">R$29,90</span><br>
-    <img src="https://raw.githubusercontent.com/3asyice/Loja-doRonei/main/20240117_110525.jpg" ><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#4">Comprar 🛒</a><br>
-    <br>#5 Blusas em promoção de <span style="color:red;"><s>R$59,80</s></span> por apenas <span style="color:#0fff00;">R$29,90</span><br>
-    <img src="https://raw.githubusercontent.com/3asyice/Loja-doRonei/main/IMG_20240116_145931_589.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#5">Comprar 🛒</a>
     <br>
-    <br>#6 Blusa azul de <span style="color:red;"><s>R$59,80</s></span> por apenas <span style="color:#0fff00;">R$29,90</span><br>
-    <img src="https://raw.githubusercontent.com/3asyice/Loja-doRonei/main/IMG_20240116_150407_389.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#6">Comprar 🛒</a><br>
-    <br>#7 Jaqueta de <span style="color:red;"><s>R$240,00</s></span> por apenas <span style="color:#0fff00;">R$120,00</span><br>
-    <img src="https://raw.githubusercontent.com/3asyice/Loja-doRonei/main/IMG_20240116_150610_735.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20jaqueta%20#7">Comprar 🛒</a>
-    
-    <br><br>#8 Blusa de <span style="color:red;"><s>R$69,00</s></span> por apenas <span style="color:#0fff00;">R$34,50</span><br>
-    <img src="https://raw.githubusercontent.com/3asyice/Loja-doRonei/main/IMG_20240116_151859_036.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#8">Comprar 🛒</a>
-    <br><br>#9 Blusa de <span style="color: red"><s>R$69,00</s></span> por apenas <span style="color:#0fff00;">R$34,50</span><br>
-    <img src="https://raw.githubusercontent.com/3asyice/Loja-doRonei/main/IMG_20240116_151907_821.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#9">Comprar 🛒</a>
+    <p>#1 Blusa de <span style="color:red"><s>R$30,00</s></span> por apenas <span style="color:#0fff00;">R$15,00</span><br>
+      <img src="https://raw.githubusercontent.com/3asyice/Loja-doRonei/main/IMG_20240117_140335_764.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#1">Comprar 🛒</a><br>
+      <br> #2 Blusa de <span style="color:red;"><s>R$79,00</s></span> pelo preço de apenas <span style="color:#0fff00;">R$39,00</span><br>
+      <img src="https://raw.githubusercontent.com/3asyice/Loja-doRonei/main/20240117_105835.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#2">Comprar 🛒</a><br>
+      <br>#3 Blusa de <span style="color:red;"><s>R$79,00</s></span> por apenas <span style="color:#0fff00;">R$39,00</span><br>
+      <img src="https://raw.githubusercontent.com/3asyice/Loja-doRonei/main/20240117_105949.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#3">Comprar 🛒</a><br>
+      <br>#4 Camisa de <span style="color:red;"><s>R$49,00</s></span> por apenas <span style="color:#0fff00;">R$29,90</span><br>
+      <img src="https://raw.githubusercontent.com/3asyice/Loja-doRonei/main/20240117_110525.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#4">Comprar 🛒</a><br>
+      <br>#5 Blusas em promoção de <span style="color:red;"><s>R$59,80</s></span> por apenas <span style="color:#0fff00;">R$29,90</span><br>
+      <img src="https://raw.githubusercontent.com/3asyice/Loja-doRonei/main/IMG_20240116_145931_589.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#5">Comprar 🛒</a>
+      <br>
+      <br>#6 Blusa azul de <span style="color:red;"><s>R$59,80</s></span> por apenas <span style="color:#0fff00;">R$29,90</span><br>
+      <img src="https://raw.githubusercontent.com/3asyice/Loja-doRonei/main/IMG_20240116_150407_389.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#6">Comprar 🛒</a><br>
+      <br>#7 Jaqueta de <span style="color:red;"><s>R$240,00</s></span> por apenas <span style="color:#0fff00;">R$120,00</span><br>
+      <img src="https://raw.githubusercontent.com/3asyice/Loja-doRonei/main/IMG_20240116_150610_735.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20jaqueta%20#7">Comprar 🛒</a>
+
+      <br><br>#8 Blusa de <span style="color:red;"><s>R$69,00</s></span> por apenas <span style="color:#0fff00;">R$34,50</span><br>
+      <img src="https://raw.githubusercontent.com/3asyice/Loja-doRonei/main/IMG_20240116_151859_036.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#8">Comprar 🛒</a>
+      <br><br>#9 Blusa de <span style="color: red"><s>R$69,00</s></span> por apenas <span style="color:#0fff00;">R$34,50</span><br>
+      <img src="https://raw.githubusercontent.com/3asyice/Loja-doRonei/main/IMG_20240116_151907_821.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#9">Comprar 🛒</a>
     </p>
   </div>
-    <div class="anel" id="anel">
-       <button style="float: right;" onclick="ring()">Voltar</button>
-      <h1>BRINCOS</h1>
-      <br>
-      <p>#1 Brincos pelo preço de <span style="color:#0fff00;">R$25,00</span> cada <br>
+  <div class="anel" id="anel">
+    <button style="float: right;" onclick="ring()">Voltar</button>
+    <h1>BRINCOS</h1>
+    <br>
+    <p>#1 Brincos pelo preço de <span style="color:#0fff00;">R$25,00</span> cada <br>
       <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG_20240118_153402_816.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20%anél">Comprar 🛒</a><br><br>
       <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG_20240118_153726_512.jpg"><br><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20anél%20como%20faço?">Comprar 🛒</a><br><br>
       <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG_20240118_153733_155.jpg"><br><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20anél%20de$20R$25">Comprar 🛒</a><br><br>
-      
+
       #2 Brincos com o valor de <span style="color:#0fff00;">R$15,00</span><br>
       <img src="https://raw.githubusercontent.com/3asyice/Loja-doRoni/main/IMG_20240118_175625_355.jpg"><br><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20brinco%20de%20R$15">Comprar 🛒</a><br><br>
-      </p>
-    </div>
-    
-    <div class="complain" id="complain">
-       <button style="float: right;" onclick="recl()">Voltar</button>
-<h1>RECLAMAÇÕES</h1>
-<form action="mailto:guilhermeabreu294@gmail.com?subject=Reclamação" method="post" enctype="text/plain">
-  <label for="nome">Seu Nome:</label>
-  <br> <input type="text" id="nome" name="nome" required><br><br>
+    </p>
+  </div>
 
-  <label for="email">Seu E-mail:</label>
-  <br> <input type="email" id="email" name="email" required><br><br>
+  <div class="complain" id="complain">
+    <button style="float: right;" onclick="recl()">Voltar</button>
+    <h1>RECLAMAÇÕES</h1>
+    <form action="mailto:guilhermeabreu294@gmail.com?subject=Reclamação" method="post" enctype="text/plain">
+      <label for="nome">Seu Nome:</label>
+      <br> <input type="text" id="nome" name="nome" required><br><br>
 
-  <label for="assunto">Assunto:</label>
-  <br> <input type="text" id="assunto" name="assunto" required><br><br>
+      <label for="email">Seu E-mail:</label>
+      <br> <input type="email" id="email" name="email" required><br><br>
 
-  <label for="mensagem">Sua Reclamação:</label>
-  <br> <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+      <label for="assunto">Assunto:</label>
+      <br> <input type="text" id="assunto" name="assunto" required><br><br>
 
-  <br> <input type="submit" value="Enviar Reclamação">
-</form>
-    </div>
-     <div class="gesso" id="gesso">
-       <button style="float:right;" onclick="gesso()">Voltar</button>
-       <h1>soluções em gesso r&r</h1>
-    
-     </div>
-   
+      <label for="mensagem">Sua Reclamação:</label>
+      <br> <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+      <br> <input type="submit" value="Enviar Reclamação">
+    </form>
+  </div>
+  <div class="gesso" id="gesso">
+    <button style="float:right;" onclick="gesso()">Voltar</button>
+    <h1>soluções em gesso r&r</h1>
+
+  </div>
+
   <script>
     var div = document.getElementById('colares');
     var display = 0;
@@ -326,7 +353,7 @@ margin:0 auto;
     }
     var clo = document.getElementById('cloths');
     var display = 0;
-    
+
     function clothes() {
       if (display == 1) {
         clo.style.display = 'block'
@@ -337,23 +364,23 @@ margin:0 auto;
         display = 1;
       }
     }
-     var rin = document.getElementById('anel');
-     var display = 0;
-    
-     function ring() {
-       if (display == 1) {
-         rin.style.display = 'block'
-         display = 0;
-       }
-       else {
-         rin.style.display = 'none'
-         display = 1;
-       }
-     }
-     
-     var ges = document.getElementById('gesso');
+    var rin = document.getElementById('anel');
     var display = 0;
-    
+
+    function ring() {
+      if (display == 1) {
+        rin.style.display = 'block'
+        display = 0;
+      }
+      else {
+        rin.style.display = 'none'
+        display = 1;
+      }
+    }
+
+    var ges = document.getElementById('gesso');
+    var display = 0;
+
     function gesso() {
       if (display == 1) {
         ges.style.display = 'block'
@@ -364,13 +391,13 @@ margin:0 auto;
         display = 1;
       }
     }
-   
 
-     
-     
+
+
+
     var rcl = document.getElementById('complain');
     var display = 0;
-    
+
     function recl() {
       if (display == 1) {
         rcl.style.display = 'block'
@@ -381,7 +408,21 @@ margin:0 auto;
         display = 1;
       }
     }
-   
+    
+      document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        document.getElementById('overlay').style.display = 'flex';
+      });
+    
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'PrintScreen' || (e.key === 'c' && e.ctrlKey) || (e.key === 'Insert' && e.ctrlKey)) {
+          e.preventDefault();
+          document.getElementById('overlay').style.display = 'flex';
+        }
+      });
+            
+  
+    
   </script>
 </body>
 
