@@ -17,19 +17,7 @@ overflow: auto;
     }
    
     
-    #overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 24px;
-      z-index: 9999;
-    }
+  
 
     h1,
     h2,
@@ -188,9 +176,7 @@ overflow: auto;
 <body>
 
   <img src="https://raw.githubusercontent.com/3asyice/Loja-doRonei/main/20240117_104507.jpg" alt="Imagem da loja de roupas do Ronei">
-  <div id="overlay">
-    
-  </div>
+
   <h1 style="padding-top:20px;">SOLUÇÕES EM GESSO R&R <br><br>LOJA DO RONI</h1>
   <br>
   
@@ -409,17 +395,7 @@ overflow: auto;
       }
     }
     
-      document.addEventListener('contextmenu', function(e) {
-        e.preventDefault();
-        document.getElementById('overlay').style.display = 'flex';
-      });
-    
-      document.addEventListener('keydown', function(e) {
-        if (e.key === 'PrintScreen' || (e.key === 'c' && e.ctrlKey) || (e.key === 'Insert' && e.ctrlKey)) {
-          e.preventDefault();
-          document.getElementById('overlay').style.display = 'flex';
-        }
-      });
+      
             
   
     
