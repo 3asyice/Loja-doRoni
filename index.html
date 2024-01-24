@@ -15,9 +15,9 @@
 margin: 0;
 overflow: auto;
     }
-   
-    
-  
+
+
+
 
     h1,
     h2,
@@ -179,7 +179,7 @@ overflow: auto;
 
   <h1 style="padding-top:20px;">SOLUÇÕES EM GESSO R&R <br><br>LOJA DO RONI</h1>
   <br>
-  
+
   <p style="padding:20px;">
 
     Loja de roupas, pulseiras, colares e anéis e muitas outras coisas. <br><br>
@@ -287,22 +287,33 @@ overflow: auto;
 
   <div class="complain" id="complain">
     <button style="float: right;" onclick="recl()">Voltar</button>
-    <h1>RECLAMAÇÕES</h1>
-    <form action="mailto:guilhermeabreu294@gmail.com?subject=Reclamação" method="post" enctype="text/plain">
-      <label for="nome">Seu Nome:</label>
-      <br> <input type="text" id="nome" name="nome" required><br><br>
+    <h2>Comentários
+    Dúvidas ou reclamações</h2>
 
-      <label for="email">Seu E-mail:</label>
-      <br> <input type="email" id="email" name="email" required><br><br>
+    <form
+  action="https://formspree.io/f/meqyekvp"
+  method="POST"
+>
+      
+      <br><br>
+  <label>
+    Seu email: <br><br>
+    <input type="email" name="Email">
+  </label><br><br>
+    <label> Seu nome: <br><br>
+      <input type="name" name="Nome">
+  
+    </label><br><br>
+  <label>
+    Descreva seu comentário: <br><br>
+    <textarea name="Reclamação"></textarea>
+  </label><br><br>
 
-      <label for="assunto">Assunto:</label>
-      <br> <input type="text" id="assunto" name="assunto" required><br><br>
+  <!-- your other form fields go here -->
+  <button type="submit">Enviar</button>
+</form>
 
-      <label for="mensagem">Sua Reclamação:</label>
-      <br> <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
 
-      <br> <input type="submit" value="Enviar Reclamação">
-    </form>
   </div>
   <div class="gesso" id="gesso">
     <button style="float:right;" onclick="gesso()">Voltar</button>
@@ -313,6 +324,40 @@ overflow: auto;
   </div>
 
   <script>
+      <!-- Read the Formbutton docs at formspree.io/formbutton/docs. See more examples at codepen.io/formspree -->
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  /* paste this line in verbatim */
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  /* customize formbutton below*/     
+  formbutton("create", {
+    action: "https://formspree.io/f/meqyekvp",
+    title: "Como posso ajudar?",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "guilhermeabreu294@gmail.com"
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "Qual é a sua reclamação?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "gray"
+      },
+      button: {
+        backgroundColor: "gray"
+      }
+    }
+  });
     var div = document.getElementById('colares');
     var display = 0;
 
@@ -396,11 +441,10 @@ overflow: auto;
         display = 1;
       }
     }
-    
-      
-            
-  
-    
+
+
+
+
   </script>
 </body>
 
