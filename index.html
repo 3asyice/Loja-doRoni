@@ -1,375 +1,214 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFpE7xU8tUJWWjlmclnS7cax8nF6cccpN-7A&usqp=CAU" title="icon" type="image/x-icon" />
-  <title>LOJA DO RONI</title>
-  <style>
-    body, html {
-      height: auto;
-      overflow: auto;
-      margin: 0;
-      border:1px solid rgba(255, 255, 255, 1);
-      margin:0;
-      background-color: rgba(0, 1, 51, 1);
-    }
-
-
-::selection {
-  color:rgba(255, 253, 0, 1);
-  background-color:rgba(255, 0, 0, 1);
-}
-
-    h1,
-    h2,
-    h3,
-    h4 {
-      color: #FF5400;
-      font-size: 20px;
-      text-align: center;
-      font-family: 'Times New Roman', Times, serif;
-    }
-
-    p {
-      font-size: 12px;
-      color: hsla(20, 0%, 100%, 1);
-      text-align: justify;
-      font-family: 'Times New Roman', Times, serif;
-
-    }
-
-    button {
-      font-family: 'Times New Roman', Times, serif;
-    }
-
-    .colares {
-      padding: 20px;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color:rgba(0, 1, 51, 1);
-      color: #FF5400;
-      text-align: center;
-      font-family: 'Times New Roman', Times, serif;
-      position: fixed;
-      display: none;
-      height: auto;
-      overflow: auto;
-    }
-
-    .pulseiras {
-      padding: 20px;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color:rgba(0, 1, 51, 1);
-      color: #FF5400;
-      text-align: center;
-      font-family: 'Times New Roman', Times, serif;
-      position: fixed;
-      display: none;
-      hsla(20, 0%, 100%, 1) height: auto;
-      overflow: auto;
-    }
-
-    .cloths {
-      padding: 20px;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color:rgba(0, 1, 51, 1);
-      color: #FF5400;
-      text-align: center;
-      font-family: 'Times New Roman', Times, serif;
-      position: fixed;
-      display: none;
-      hsla(20, 0%, 100%, 1);
-      overflow: auto;
-      height: auto;
-
-    }
-
-    .anel {
-      padding: 20px;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color:rgba(0, 1, 51, 1);
-      color: #FF5400;
-      text-align: center;
-      font-family: 'Times New Roman', Times, serif;
-      position: fixed;
-      display: none;
-      hsla(20, 0%, 100%, 1);
-      overflow: auto;
-      height: auto;
-
-    }
-
-    .complain {
-      padding: 20px;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color:rgba(0, 1, 51, 1);
-      color: #FF5400;
-      text-align: center;
-      font-family: 'Times New Roman', Times, serif;
-      position: fixed;
-      display: none;
-      hsla(20, 0%, 100%, 1);
-      overflow: auto;
-      height: auto;
-
-    }
-
-
-    img {
-      height: 50%;
-      width: 100%;
-      margin: 0 auto;
-
-
-
-    }
-   
-
-.button-85 {
-  padding: 10px 25px;
-  border: none;
-  outline: none;
-  color: rgb(255, 255, 255);
-  background: #111;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-  border-radius: 10px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulatbox-shadow: 3px 5px 5px rgba(167, 167, 167, 1);ion;
-}
-
-.button-85:before {
-  content: "";
-  background: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing-button-85 20s linear infinite;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
-}
-
-@keyframes glowing-button-85 {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-.button-85:after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #222;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-}
-
-    button {
-  background-color: rgba(58, 58, 58, 1);
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 3px 5px 5px rgba(0, 0, 0, 1);
-  padding: 10px 30px; /* Alterado para definir padding vertical e horizontalmente */
-  border: 0;
-  border-radius: 15px;
-  font-size: 12px;
-}
-
-button:hover {
-  background-color: rgba(255, 255, 255, 1);
-  color: rgba(0, 0, 0, 1);
-  box-shadow: 3px 5px 5px rgba(167, 167, 167, 1);
-  padding: 10px 30px; /* Mantém o mesmo padding no estado hover */
-  border-radius: 15px;
-}
-
-    .gesso {
-      padding: 20px;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color:rgba(0, 1, 51, 1);
-      color: #FF5400;
-      text-align: center;
-      font-family: 'Times New Roman', Times, serif;
-      position: fixed;
-      display: none;
-      hsla(20, 0%, 100%, 1);
-      overflow: auto;
-      height: auto;
-    }
-  </style>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1251">
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+  <title>Loja do Roni</title>
 </head>
+<style>
+  html,
+  body {
+    height: 100%;
+    background-color: rgba(63, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+
+  h1 {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  h1,
+  p {
+    font-family: 'Courier New', Courier;
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+img {
+  height:100%;
+  width:100%;
+}
+  p {
+    font-weight: bold;
+  }
+
+  .Home,
+  .anel {
+    top: 0;
+    right: 0;
+    left: 50%;
+    bottom: 0;
+    position: fixed;
+    overflow: auto;
+    height: auto;
+    display: none;
+    background-color: rgba(0, 53, 138, 1);
+  }
+
+  .anel, .roupa, .colar, .pulseiras, .feedback {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    overflow: auto;
+    height: auto;
+    display: none;
+    background-color: rgba(0, 53, 138, 1);
+  }
+
+  button {
+    margin:15px;
+    margin: auto;
+    display: block;
+    color: rgba(0, 255, 249, 1);
+    box-shadow: 3px 4px 4px rgba(0, 255, 249, 1);
+    background-color: rgba(67, 67, 67, 1);
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  button:hover {
+    margin: auto;
+    display: block;
+    color: rgba(255, 0, 0, 1);
+    box-shadow: 3px 4px 4px rgba(255, 0, 0, 1);
+    background-color: rgba(67, 67, 67, 1);
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .img2 {
+    width:100%;
+    height:50%;
+  }
+  a {
+    color: rgba(0, 214, 255, 1);
+  }
+  a:hover {
+    color:rgba(135, 0, 255, 1);
+  }
+</style>
 
 <body>
-
-  <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707137735/20240117_104507_s7kdff.jpg">
-
-  <h1 style="padding-top:10px;">SOLUÇÕES EM GESSO R&R <br><br>LOJA DO RONI</h1>
-  <br>
-
-  <p style="padding-left:20px;padding-right:20px;">
-
-    Loja de roupas, pulseiras, colares e anéis e muitas outras coisas. <br><br>
-    Localizado em Santa Maria RS, bairro São José, Rua Av. Pref. Evandro Behr 2280.
-    <br><br>
-    WhatsApp para contato:<a style="color:white;" href="https://wa.me/555592129068">+555592129068</a>
-  </p> <br><br>
-  <div style="margin:10px;height:auto;overflow:auto;padding:50px;">
-    <div style="text-align: left; float: left;">
-        <button class="button-85" onclick="colareS()">Colares</button><br><br>
-        <button class="button-85" onclick="pulseiras()">Pulseiras</button><br><br>
-        <button class="button-85" onclick="clothes()">Roupas</button><br>
-    </div>
-    <div style="text-align: right; float: right;">
-        <button class="button-85" onclick="ring()">Brincos</button><br><br>
-        <button class="button-85" onclick="gesso()">Página</button><br><br>
-        <button class="button-85" onclick="recl()">Feedback</button><br>
-    </div>
-</div>
-
-  <div class="colares" id="colares">
-    <button class="button-85" style="float:right;" onclick="colareS()">Voltar</button>
-
-    <h1 style="padding-top:40px;">COLARES</h1>
-    <br>
-    <p>#1 Colar pelo preço de <span style="color:#0fff00;">R$120,00</span> <br>
-      <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707137868/IMG-20240117-WA0002_nundz3.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#1">Comprar 🛒</a>
-      <br><br>
-      #2 Colar pelo preço de <span style="color:#0fff00;">R$20,00</span><br>
-      <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707138050/IMG_20240116_145152_783_ylz5gt.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#2">Comprar 🛒</a><br><br>
-      #3 Colar pelo preço de <span style="color:#0fff00;">R$79,00</span><br>
-      <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707138204/1705494390343_q9g3cr.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#3">Comprar 🛒</a><br><br>
-      #4 Colar por apenas <span style="color:#0fff00;">R$20,00</span><br>
-      <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707138264/1705499380638_zzapub.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#4">Comprar 🛒</a>
-      <br><br>
-      #5 Colar de apenas <span style="color:#0fff00;">R$20,00</span><br>
-      <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707138388/IMG_20240116_145422_671_rxrjey.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#5">Comprar 🛒</a>
-      <br><br>
-      #6 Colar pelo preço de <span style="color:#0fff00;">R$229,00</span><br>
-      <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707138489/IMG_20240116_145459_166_tonowv.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#6">Comprar 🛒</a>
-      <br><br>
-      #7 Colar pelo preço de <span style="color:#0fff00;">R$198,00</span><br>
-      <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707138535/IMG_20240116_145536_536_qokrdo.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#7">Comprar 🛒</a><br><br>
-      #8 Colar pelo preço de <span style="color:#0fff00;">R$198,00</span><br>
-      <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707138602/IMG_20240116_145620_073_pfmcac.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#8">Comprar 🛒</a><br><br>
-      #9 Colar pelo preço de <span style="color:#0fff00;">R$198,00</span><br>
-      <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707138684/IMG_20240116_145642_835_amxd6n.jpg" /><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#9">Comprar 🛒</a>
-      <br><br>
-      #10 Colar pelo preço de <span style="color:#0fff00;">R$79,90</span><br>
-      <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707138761/IMG_20240116_145729_827_qyhdwd.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#10">Comprar 🛒</a>
-      <br><br>
-      #11 Colar pelo preço de <span style="color:#0fff00;">R$198,00</span><br>
-      <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707138799/IMG_20240118_172920_364_ylmupl.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar$20#11">Comprar 🛒</a>
-      <br><br>
-      #12 Colar pelo preço de  <span style="color:#0fff00;">R$199,99</span><br>
-      <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707154445/20240205_120304_lkgjrj.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar$20#12">Comprar 🛒</a>
-      <br><br>
-    </p>
-  </div>
-  <div class="pulseiras" id="pulseiras">
-    <button class="button-85" style="float:right;" onclick="pulseiras()">Voltar</button>
-    <h1 style="padding-top:40px;">PULSEIRAS</h1>
-    <br>
-    <p>#1 Pulseira por apenas <span style="color:#0fff00;">R$79,00</span><br>
-      <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707138837/IMG_20240116_144058_034_hl8prg.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20a%20pulseira$20#1">Comprar 🛒</a>
-      <br><br>
-      #2 Pulseira de bronze por <span style="color:#0fff00;">R$79,00</span><br>
-      <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707138918/IMG_20240118_174008_492_wfbxju.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20a%20pulseira$20#2">Comprar 🛒</a>
-    </p>
-  </div>
-  <div class="cloths" id="cloths">
-    <button class="button-85" style="float:right;" onclick="clothes()">Voltar</button>
-    <h1>ROUPAS</h1>
-    <h3>Promoção:</h3>
-    <br>
-    <p>#1 Blusa de <span style="color:red"><s>R$30,00</s></span> por apenas <span style="color:#0fff00;">R$15,00</span><br>
-      <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707138953/IMG_20240117_140335_764_lqatvk.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#1">Comprar 🛒</a><br>
-      <br> #2 Blusa de <span style="color:red;"><s>R$79,00</s></span> pelo preço de apenas <span style="color:#0fff00;">R$39,00</span><br>
-      <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707139063/20240117_105835_l49brf.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#2">Comprar 🛒</a><br>
-      <br>#3 Blusa de <span style="color:red;"><s>R$79,00</s></span> por apenas <span style="color:#0fff00;">R$39,00</span><br>
-      <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707139102/20240117_105949_klm5hg.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#3">Comprar 🛒</a><br>
-      <br>#4 Camisa de <span style="color:red;"><s>R$49,00</s></span> por apenas <span style="color:#0fff00;">R$29,90</span><br>
-      <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707139141/20240117_110525_hdcx60.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#4">Comprar 🛒</a><br>
-      <br>#5 Blusas em promoção de <span style="color:red;"><s>R$59,80</s></span> por apenas <span style="color:#0fff00;">R$29,90</span><br>
-      <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707139224/IMG_20240116_145931_589_r04zra.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#5">Comprar 🛒</a>
-      <br>
-      <br>#6 Blusa azul de <span style="color:red;"><s>R$59,80</s></span> por apenas <span style="color:#0fff00;">R$29,90</span><br>
-      <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707139360/IMG_20240116_150407_389_emij0d.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#6">Comprar 🛒</a><br>
-      <br>#7 Jaqueta de <span style="color:red;"><s>R$240,00</s></span> por apenas <span style="color:#0fff00;">R$120,00</span><br>
-      <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707139408/IMG_20240116_150610_735_cpbr2e.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20jaqueta%20#7">Comprar 🛒</a>
-
-      <br><br>#8 Blusa de <span style="color:red;"><s>R$69,00</s></span> por apenas <span style="color:#0fff00;">R$34,50</span><br>
-      <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707139444/IMG_20240116_151859_036_pk2o2z.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#8">Comprar 🛒</a>
-      <br><br>#9 Blusa de <span style="color: red"><s>R$69,00</s></span> por apenas <span style="color:#0fff00;">R$34,50</span><br>
-      <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707139482/IMG_20240116_151907_821_fngjid.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#9">Comprar 🛒</a>
-    </p>
+  <img class="img2" src="https://res.cloudinary.com/djkla1m25/image/upload/v1707137735/20240117_104507_s7kdff.jpg" width="50px" height="50px">
+  <button style="float:right;" onclick="clickHome()">HOME</button>
+  <h1> <span style="color:orange">Loja Do Roni</span>
+    <br>SOLUÇÕES EM <br>GESSO R&R</h1>
+  <p>Loja de roupas, pulseiras, colares e anéis e muitas outras coisas.
+<br><br>
+Localizado em Santa Maria RS, bairro São José, Rua Av. Pref. Evandro Behr 2280.
+<br><br>
+WhatsApp: <a href="https://wa.me/+555592129068">+555592129068</a></p>
+<br><br><br><br>
+  <div class="Home" id="Home">
+    <button style="float:left;margin-top:16px;" onclick="clickHome()">X</button>
+    <h1>HOME</h1>
+    <button onclick="clickAnel()">BRINCOS</button><br>
+    <button onclick="clickRoupa()">ROUPAS</button><br>
+    <button onclick="clickColar()">COLARES</button><br>
+    <button onclick="clickPulseira()">PULSEIRAS</button><br>
+    <button onclick="feedBack()">FEEDBACK</button>
   </div>
   <div class="anel" id="anel">
-    <button class="button-85"style="float: right;" onclick="ring()">Voltar</button>
-    <h1>BRINCOS</h1>
-    <br>
-    <p>#1 Brincos pelo preço de <span style="color:#0fff00;">R$25,00</span> cada <br>
-      <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707139597/IMG_20240118_153402_816_tiwjoa.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20%anél">Comprar 🛒</a><br><br>
-      <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707139650/IMG_20240118_153726_512_vzojzu.jpg"><br><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20anél%20como%20faço?">Comprar 🛒</a><br><br>
-      <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707139722/IMG_20240118_153733_155_gtyey5.jpg"><br><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20anél%20de$20R$25">Comprar 🛒</a><br><br>
-
-      #2 Brincos com o valor de <span style="color:#0fff00;">R$15,00</span><br>
-      <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707139830/IMG_20240118_175625_355_lnixrb.jpg"><br><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20brinco%20de%20R$15">Comprar 🛒</a><br><br>
-    </p>
+    <button style="float:right;margin:15px;" onclick="clickAnel()">VOLTAR</button>
+     <h1>BRINCOS</h1>
+     <br>
+     <p>#1 Brincos pelo preço de <span style="color:#0fff00;">R$25,00</span> cada <br>
+       <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707139597/IMG_20240118_153402_816_tiwjoa.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20%anél">Comprar 🛒</a><br><br>
+       <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707139650/IMG_20240118_153726_512_vzojzu.jpg"><br><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20anél%20como%20faço?">Comprar 🛒</a><br><br>
+       <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707139722/IMG_20240118_153733_155_gtyey5.jpg"><br><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20anél%20de$20R$25">Comprar 🛒</a><br><br>
+    
+       #2 Brincos com o valor de <span style="color:#0fff00;">R$15,00</span><br>
+       <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707139830/IMG_20240118_175625_355_lnixrb.jpg"><br><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20brinco%20de%20R$15">Comprar 🛒</a><br><br>
+     </p>
   </div>
-
-  <div class="complain" id="complain">
-    <button class="button-85" style="float: right;" onclick="recl()">Voltar</button>
-    <h2>Comentários<br>
+  <div class="roupa" id="roupa">
+      <button style="float:right;margin:15px;" onclick="clickRoupa()">VOLTAR</button>
+          <h1 style="color:yellow; margin-left:70px;margin-right:70px;background-color:rgba(255, 0, 0, 1);"><span style="color:black">ROUPAS em</span> <br>PROMOÇÃO:</h1>
+          <br>
+          <p>#1 Blusa de <span style="color:red"><s>R$30,00</s></span> por apenas <span style="color:#0fff00;">R$15,00</span><br>
+            <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707138953/IMG_20240117_140335_764_lqatvk.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#1">Comprar 🛒</a><br>
+            <br> #2 Blusa de <span style="color:red;"><s>R$79,00</s></span> pelo preço de apenas <span style="color:#0fff00;">R$39,00</span><br>
+            <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707139063/20240117_105835_l49brf.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#2">Comprar 🛒</a><br>
+            <br>#3 Blusa de <span style="color:red;"><s>R$79,00</s></span> por apenas <span style="color:#0fff00;">R$39,00</span><br>
+            <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707139102/20240117_105949_klm5hg.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#3">Comprar 🛒</a><br>
+            <br>#4 Camisa de <span style="color:red;"><s>R$49,00</s></span> por apenas <span style="color:#0fff00;">R$29,90</span><br>
+            <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707139141/20240117_110525_hdcx60.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#4">Comprar 🛒</a><br>
+            <br>#5 Blusas em promoção de <span style="color:red;"><s>R$59,80</s></span> por apenas <span style="color:#0fff00;">R$29,90</span><br>
+            <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707139224/IMG_20240116_145931_589_r04zra.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#5">Comprar 🛒</a>
+            <br>
+            <br>#6 Blusa azul de <span style="color:red;"><s>R$59,80</s></span> por apenas <span style="color:#0fff00;">R$29,90</span><br>
+            <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707139360/IMG_20240116_150407_389_emij0d.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#6">Comprar 🛒</a><br>
+            <br>#7 Jaqueta de <span style="color:red;"><s>R$240,00</s></span> por apenas <span style="color:#0fff00;">R$120,00</span><br>
+            <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707139408/IMG_20240116_150610_735_cpbr2e.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20jaqueta%20#7">Comprar 🛒</a>
+      
+            <br><br>#8 Blusa de <span style="color:red;"><s>R$69,00</s></span> por apenas <span style="color:#0fff00;">R$34,50</span><br>
+            <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707139444/IMG_20240116_151859_036_pk2o2z.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#8">Comprar 🛒</a>
+            <br><br>#9 Blusa de <span style="color: red"><s>R$69,00</s></span> por apenas <span style="color:#0fff00;">R$34,50</span><br>
+            <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707139482/IMG_20240116_151907_821_fngjid.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20essa%20roupa%20#9">Comprar 🛒</a>
+          </p>
+  </div>
+  <div class="colar" id="colar">
+     <button style="float:right;margin:15px;" onclick="clickColar()">COLARES</button>
+     <h1>COLARES</h1>
+     <br>
+     <p>#1 Colar pelo preço de <span style="color:#0fff00;">R$120,00</span> <br>
+       <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707137868/IMG-20240117-WA0002_nundz3.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#1">Comprar 🛒</a>
+       <br><br>
+       #2 Colar pelo preço de <span style="color:#0fff00;">R$20,00</span><br>
+       <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707138050/IMG_20240116_145152_783_ylz5gt.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#2">Comprar 🛒</a><br><br>
+       #3 Colar pelo preço de <span style="color:#0fff00;">R$79,00</span><br>
+       <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707138204/1705494390343_q9g3cr.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#3">Comprar 🛒</a><br><br>
+       #4 Colar por apenas <span style="color:#0fff00;">R$20,00</span><br>
+       <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707138264/1705499380638_zzapub.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#4">Comprar 🛒</a>
+       <br><br>
+       #5 Colar de apenas <span style="color:#0fff00;">R$20,00</span><br>
+       <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707138388/IMG_20240116_145422_671_rxrjey.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#5">Comprar 🛒</a>
+       <br><br>
+       #6 Colar pelo preço de <span style="color:#0fff00;">R$229,00</span><br>
+       <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707138489/IMG_20240116_145459_166_tonowv.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#6">Comprar 🛒</a>
+       <br><br>
+       #7 Colar pelo preço de <span style="color:#0fff00;">R$198,00</span><br>
+       <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707138535/IMG_20240116_145536_536_qokrdo.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#7">Comprar 🛒</a><br><br>
+       #8 Colar pelo preço de <span style="color:#0fff00;">R$198,00</span><br>
+       <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707138602/IMG_20240116_145620_073_pfmcac.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#8">Comprar 🛒</a><br><br>
+       #9 Colar pelo preço de <span style="color:#0fff00;">R$198,00</span><br>
+       <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707138684/IMG_20240116_145642_835_amxd6n.jpg" /><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#9">Comprar 🛒</a>
+       <br><br>
+       #10 Colar pelo preço de <span style="color:#0fff00;">R$79,90</span><br>
+       <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707138761/IMG_20240116_145729_827_qyhdwd.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar%20#10">Comprar 🛒</a>
+       <br><br>
+       #11 Colar pelo preço de <span style="color:#0fff00;">R$198,00</span><br>
+       <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707138799/IMG_20240118_172920_364_ylmupl.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar$20#11">Comprar 🛒</a>
+       <br><br>
+       #12 Colar pelo preço de <span style="color:#0fff00;">R$199,99</span><br>
+       <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707154445/20240205_120304_lkgjrj.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20um%20colar$20#12">Comprar 🛒</a>
+       <br><br>
+     </p>
+  </div>
+  <div class="pulseiras" id="pulseiras">
+     <button style="float:right;margin:10px;" onclick="clickPulseira()">VOLTAR</button>
+      <h1>PULSEIRAS</h1>
+      <br>
+      <p>#1 Pulseira por apenas <span style="color:#0fff00;">R$79,00</span><br>
+        <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707138837/IMG_20240116_144058_034_hl8prg.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20a%20pulseira$20#1">Comprar 🛒</a>
+        <br><br>
+        #2 Pulseira de bronze por <span style="color:#0fff00;">R$79,00</span><br>
+        <img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707138918/IMG_20240118_174008_492_wfbxju.jpg"><a href="https://api.whatsapp.com/send?phone=555591722661&text=Quero%20comprar%20a%20pulseira$20#2">Comprar 🛒</a>
+      </p>
+     
+  </div>
+  <div class="feedback" id="feedback">
+      <button style="float:right;margin:15px;" onclick="feedBack()">FEEDBACK</button>
+    <h2 style="text-align: center;">Comentários<br>
       Dúvidas ou<br> Reclamações</h2>
 
-    <form action="https://formspree.io/f/meqyekvp" method="POST">
+    <form style="text-align: center;" action="https://formspree.io/f/meqyekvp" method="POST">
 
       <br><br>
       <label>
@@ -389,138 +228,50 @@ button:hover {
       <button type="submit">Enviar</button>
     </form>
 
-
   </div>
-  <div class="gesso" id="gesso">
-    <button class="button-85" style="float:right;" onclick="gesso()">Voltar</button>
-    <h1>SOLUÇÕES EM GESSO R&R</h1>
-
-    <br>
-    <a href="https://www.facebook.com/rersolucoesemgesso">Página do Facebook</a>
-  </div>
-
   <script>
-    <!-- Read the Formbutton docs at formspree.io/formbutton/docs. See more examples at codepen.io/formspree 
-    -->
-  <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
-  <script>
-    /* paste this line in verbatim */
-    window.formbutton = window.formbutton || function() {
-      (formbutton.q = formbutton.q || []).push(arguments)
-    };
-    /* customize formbutton below*/
-    formbutton("create", {
-      action: "https://formspree.io/f/meqyekvp",
-      title: "Como posso ajudar?",
-      fields: [
-        {
-          type: "email",
-          label: "Email:",
-          name: "email",
-          required: true,
-          placeholder: "guilhermeabreu294@gmail.com"
-      },
-        {
-          type: "textarea",
-          label: "Message:",
-          name: "message",
-          placeholder: "Qual é a sua reclamação?",
-      },
-        { type: "submit" }
-    ],
-      styles: {
-        title: {
-          backgroundColor: "gray"
-        },
-        button: {
-          backgroundColor: "gray"
-        }
-      }
-    });
-    var div = document.getElementById('colares');
-    var display = 0;
+    var homeDiv = document.getElementById('Home');
+    var anelDiv = document.getElementById('anel');
+    var roupaDiv = document.getElementById('roupa');
+    var colarDiv = document.getElementById('colar');
+    var pulDiv = document.getElementById('pulseiras');
+    var fbDiv = document.getElementById('feedback')
 
-    function colareS() {
-      if (display == 1) {
-        div.style.display = 'block'
-        display = 0;
-      }
-      else {
-        div.style.display = 'none'
-        display = 1;
-      }
-    }
-    var pul = document.getElementById('pulseiras');
-    var display = 0;
+    var displayHome = false;
+    var displayAnel = false;
+    var displayRoupa = false;
+    var displayColar = false;
+    var displayPul = false;
+    var displayFb = false;
 
-    function pulseiras() {
-      if (display == 1) {
-        pul.style.display = 'block'
-        display = 0;
-      }
-      else {
-        pul.style.display = 'none'
-        display = 1;
-      }
-    }
-    var clo = document.getElementById('cloths');
-    var display = 0;
-
-    function clothes() {
-      if (display == 1) {
-        clo.style.display = 'block'
-        display = 0;
-      }
-      else {
-        clo.style.display = 'none'
-        display = 1;
-      }
-    }
-    var rin = document.getElementById('anel');
-    var display = 0;
-
-    function ring() {
-      if (display == 1) {
-        rin.style.display = 'block'
-        display = 0;
-      }
-      else {
-        rin.style.display = 'none'
-        display = 1;
-      }
+    function clickHome() {
+      displayHome = !displayHome;
+      homeDiv.style.display = displayHome ? 'block' : 'none';
     }
 
-    var ges = document.getElementById('gesso');
-    var display = 0;
-
-    function gesso() {
-      if (display == 1) {
-        ges.style.display = 'block'
-        display = 0;
-      }
-      else {
-        ges.style.display = 'none'
-        display = 1;
-      }
+    function clickAnel() {
+      displayAnel = !displayAnel;
+      anelDiv.style.display = displayAnel ? 'block' : 'none';
     }
-
-
-
-
-    var rcl = document.getElementById('complain');
-    var display = 0;
-
-    function recl() {
-      if (display == 1) {
-        rcl.style.display = 'block'
-        display = 0;
-      }
-      else {
-        rcl.style.display = 'none'
-        display = 1;
-      }
+    function clickRoupa() {
+      displayRoupa = !displayRoupa;
+      roupaDiv.style.display = displayRoupa ? 'block' : 'none';
+    }
+    function clickColar() {
+      displayColar = !displayColar;
+      colarDiv.style.display = displayColar ? 'block' : 'none';
+    }
+    function clickPulseira() {
+      displayPul = !displayPul;
+      pulDiv.style.display = displayPul ?
+      'block' : 'none';
+    }
+    function feedBack() {
+      displayFb = !displayFb;
+      fbDiv.style.display = displayFb ?
+      'block' : 'none';
     }
   </script>
 </body>
 
-  </html>
+</html>
