@@ -13,7 +13,7 @@
   html,
   body {
     height: 100%;
-    background-color: rgba(63, 0, 0, 1);
+    background-color: rgba(31, 31, 31, 1);
     color: rgba(255, 255, 255, 1);
   }
 
@@ -39,15 +39,17 @@ img {
 
   .Home,
   .anel {
+    font-family: 'Times New Roman', Times, serif;
     top: 0;
     right: 0;
-    left: 50%;
+    left: 0;
     bottom: 0;
     position: fixed;
+    border:3px solid black;
     overflow: auto;
     height: auto;
     display: none;
-    background-color: rgba(0, 53, 138, 1);
+    background-color: rgba(0, 16, 81, 1);
   }
 
   .anel, .roupa, .colar, .pulseiras, .feedback {
@@ -63,25 +65,27 @@ img {
   }
 
   button {
-    margin:15px;
+    font-family: 'Times New Roman', Times, serif;
     margin: auto;
     display: block;
     color: rgba(0, 255, 249, 1);
-    box-shadow: 3px 4px 4px rgba(0, 255, 249, 1);
+    box-shadow: 0 1px 0 0 rgba(0, 255, 249, 1);
     background-color: rgba(67, 67, 67, 1);
-    padding: 5px;
-    border-radius: 5px;
+    background: none; /* Remove o plano de fundo */
+  border: none; /* Remove a borda */
+  padding: 0;
   }
 
   button:hover {
     margin: auto;
     display: block;
     color: rgba(255, 0, 0, 1);
-    box-shadow: 3px 4px 4px rgba(255, 0, 0, 1);
+    box-shadow: 0 1px 0 0 rgba(255, 0, 0, 1);
     background-color: rgba(67, 67, 67, 1);
-    padding: 5px;
-    border-radius: 5px;
-  }
+  background: none; /* Remove o plano de fundo */
+  border: none; /* Remove a borda */
+  padding: 0; /* Remove o preenchimento */
+}
   .img2 {
     width:100%;
     height:50%;
@@ -92,11 +96,20 @@ img {
   a:hover {
     color:rgba(135, 0, 255, 1);
   }
+  svg, .img3 {
+    height:25px;
+    width:25px;
+    cursor:pointer;
+    text-align: center;
+    position:
+  }
 </style>
 
 <body>
   
-  <button style="float:right;margin-right: 15px;" onclick="clickHome()">HOME</button>
+  <button style="float:right;margin-right: 15px;" onclick="clickHome()"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+    <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z" height="15px" width="15px"></path>
+  </svg></button>
   <h1> <span style="color:orange">Loja Do Roni</span>
     <br> <span style="font-size: 13px">SOLUÇÕES EM GESSO R&R</span></h1>
   <p>Loja de roupas, pulseiras, colares e anéis e muitas outras coisas.
@@ -106,8 +119,8 @@ Localizado em Santa Maria RS, bairro São José, Rua Av. Pref. Evandro Behr 2280
 WhatsApp: <a href="https://wa.me/+555592129068">+555592129068</a></p>
 <img class="img2" src="https://res.cloudinary.com/djkla1m25/image/upload/v1707137735/20240117_104507_s7kdff.jpg" width="50px" height="50px">
   <div class="Home" id="Home">
-    <button style="float:left;margin-top:16px;" onclick="clickHome()">X</button>
-    <h1>HOME</h1>
+    <button style="float:right;margin-top:16px;margin-right:25px;" onclick="clickHome()"><img class="img3"src="https://www.svgrepo.com/show/513649/exit.svg" alt=""></button>
+    <h1>LOJA</h1>
     <button onclick="clickAnel()">BRINCOS</button><br>
     <button onclick="clickRoupa()">ROUPAS</button><br>
     <button onclick="clickColar()">COLARES</button><br>
